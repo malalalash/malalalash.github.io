@@ -3,22 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
-  <title>Frontend Mentor | QR code component</title>
-
+  <link rel="stylesheet" href="style.css">
   
+  <title>Frontend Mentor | Product preview card component</title>
+
+
 </head>
 <body>
-<div class="wrapper">
-  <img src="/images/image-qr-code.png" alt="image of qr code">
-  <h1>Improve your front-end<br>skills by building projects</h1>
-  <p>Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level</p>
+  <main>
+    <div class="card">
 
-</div>
+      <picture>
+        <img src="/images/image-product-desktop.jpg" class="image1" alt="image of perfume">
+        <img src="/images/image-product-mobile.jpg" class="image2" alt="image of perfume">
+      </picture>
 
+        <div class="content">
 
+          <p class="type">PERFUME</p>
 
+          <h1  class="title">Gabrielle<br class="desktop">Essence<br class="mobile"> Eau<br class="desktop"> De Parfum</h1>
+
+          <p class="description">A floral, solar and voluptuous<br class="mobile"><br class="desktop">interpretation composed by<br class="desktop">Olivier<br class="mobile"> Polge, 
+          Perfumer-Creator<br class="desktop">for the House of<br class="mobile"> CHANEL.</p>
+            <div class="price">
+              <p class="current-price">$149.99</p>
+              <p class="orig-price"><s>$169.99</s></p>
+            </div>
+            <button class="button"><img src="/images/icon-cart.svg" alt="addtocard">Add to Cart</button>
+        </div>
+    </div>
+
+    
+  </main>
 </body>
+
 </html>
