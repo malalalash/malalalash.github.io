@@ -59,7 +59,7 @@
     justify-content: center;
     background: hsl(217, 54%, 11%);
     height: 100vh;
-    max-width: 1440px;
+    width: 100%;
   }
 
   .wrapper {
