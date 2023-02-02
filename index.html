@@ -3,22 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
-  <title>Frontend Mentor | QR code component</title>
-
-  
+  <link rel="stylesheet" href=" ">
+  <title>Frontend Mentor | NFT preview card component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrapper">
-  <img src="/images/image-qr-code.png" alt="image of qr code">
-  <h1>Improve your front-end<br>skills by building projects</h1>
-  <p>Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level</p>
+      <picture class="image">
+        <img src="/images/image-equilibrium.jpg" alt="picture of crypto currency">
+        <div class="overlay">
+        </div>
+        <span><img src="/images/iconmonstr-eye-9.svg" class="eye"></span>
+      </picture>
+      <h3>Equilibrium #3429</h3>
 
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+    <ul class="things">
+      <li class="text1"><img src="./images/icon-ethereum.svg" alt=""><span>0.041 ETH</span></li>
+      <li class="text2"><img src="/images/icon-clock.svg" alt=""><span>3 days left</span></li>
+    </ul>
+    <div class="last">
+    <img src="/images/image-avatar.png" sizes="32x32" alt="" class="avatar"><span>Creation of <span class="color">Jules Wyvern</span></span>
+    </div>
 </div>
-
-
-
 </body>
 </html>
