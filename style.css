@@ -59,6 +59,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -100px;
   background-color: hsl(225deg, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
   display: flex;
@@ -199,5 +203,9 @@ ul li .cash {
     padding: 15px 0 15px 0;
     margin-right: 25px;
     margin-left: 25px;
+  }
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-position-y: 0;
   }
 }/*# sourceMappingURL=style.css.map */
