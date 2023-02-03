@@ -3,22 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
-  <title>Frontend Mentor | QR code component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+    </style>
+    
+  <title>Frontend Mentor | Order summary card</title>
 
-  
 </head>
 <body>
-<div class="wrapper">
-  <img src="/images/image-qr-code.png" alt="image of qr code">
-  <h1>Improve your front-end<br>skills by building projects</h1>
-  <p>Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level</p>
+    <div class="wrapper">
+        <picture>
+          <img src="images/illustration-hero.svg" alt="">
+        </picture>
+        <h2>Order Summary</h2>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+        <div class="wrapper2"> 
+          <div class="price">
+            <img src="./images/icon-music.svg" class="musicicon" alt="music icon">
+            <ul>
+              <li><span class="plan">Annual Plan</span></li>
+              <li><span class="cash">$59.99/year</span></li>
+            </ul>
+            <a href="">Change</a>
+          </div>
+        </div> 
+        
 
-</div>
-
-
+      <button class="firstButton">Proceed to Payment</button>
+      <button class="secondButton">Cancel Order</button>
+    </div>
 
 </body>
 </html>
