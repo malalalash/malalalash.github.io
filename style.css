@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+img {
+  height: 100%;
+  max-width: 470px;
+  float: right;
+}
+
+header {
+  margin-right: 40px;
+}
+
+.overlay {
+  position: absolute;
+  width: 530px;
+  top: 0;
+  right: 50%;
+  left: 0;
+  background: hsl(277deg, 64%, 61%);
+  opacity: 0.5;
+  height: 100%;
+  transform: translate(100%);
+}
+
+body {
+  background: hsl(233deg, 47%, 7%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin: 60px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+h1 .violet {
+  color: hsl(277deg, 64%, 61%);
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 60px;
+  margin-right: 90px;
+  margin-top: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+  padding-left: 0px;
+  margin-right: 60px;
+  padding-bottom: 20px;
+}
+
+li {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+}
+li .span2 {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+li:nth-child(3) {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  max-height: 100%;
+  background: hsl(244deg, 38%, 16%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.wrapper2 {
+  margin-left: 40px;
+  max-width: 420px;
+}
+
+main {
+  width: 530px;
+  min-width: 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: minmax(0, 1fr);
+    min-width: 0;
+    margin: 20px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .overlay {
+    transform: translate(0);
+    max-height: 250px;
+  }
+  img {
+    order: 1;
+    width: 100%;
+    height: 250px;
+  }
+  main {
+    order: 2;
+    min-width: 0px;
+    max-width: 100%;
+    text-align: center;
+  }
+  h1 {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  p {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  ul {
+    margin: 0 50px 0 0;
+    text-align: center;
+  }
+  li {
+    margin-top: 15px;
+  }
+  header {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  ul {
+    flex-direction: column;
+  }
+}
+header {
+  margin: auto;
+}
+
+p {
+  margin-top: 15px;
+}/*# sourceMappingURL=style.css.map */

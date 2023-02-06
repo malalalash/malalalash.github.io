@@ -3,22 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
-  <title>Frontend Mentor | QR code component</title>
-
   
-</head>
+  <title>Frontend Mentor | Stats preview card component</title>
+
+
 <body>
-<div class="wrapper">
-  <img src="/images/image-qr-code.png" alt="image of qr code">
-  <h1>Improve your front-end<br>skills by building projects</h1>
-  <p>Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level</p>
-
-</div>
-
-
-
+  <div class="wrapper">
+    <main>
+      <header>
+        <h1>Get <span class="violet">insights</span> that help your business grow.</h1>
+      </header>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+          <div class="wrapper2">
+            <ul>
+              <li><h2>10k+</h2><span class="span2">companies</span></li>
+              <li><h2>314</h2><span class="span2">templates</span></li>
+              <li><h2>12m+</h2><span class="span2">queries</span></li>
+            </ul>
+          </div>
+    </main>
+    <picture>
+      <source media="max-width: 1024px)" srcset="./images/image-header-mobile.jpg">
+      <img src="./images/image-header-desktop.jpg" alt="image of our team">
+      <div class="overlay"></div>
+    </picture>
+  </div>
 </body>
 </html>
