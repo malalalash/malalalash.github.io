@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
-  <title>Frontend Mentor | QR code component</title>
-
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TODO app</title>
 </head>
+
 <body>
-<div class="wrapper">
-  <img src="/images/image-qr-code.png" alt="image of qr code">
-  <h1>Improve your front-end<br>skills by building projects</h1>
-  <p>Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level</p>
+    <header>
+        <h1>Task List</h1>
+    </header>
+    <div class="window">
+        <form>
+            <input type="text" class="todo-input" placeholder="Add new task">
+            <button class="add-todo">Add Task</button>
+        </form>
+    </div>
+    <select name="task" id="task" onchange="selectValue()">
+        <option value="All">All</option>
+        <option value="Uncompleted">Uncompleted</option>
+        <option value="Completed">Completed</option>
+    </select>
+    <main>
+        <ul class="todo-list"></ul>
 
-</div>
+    </main>
 
-
-
+    <script src="app.js"></script>
 </body>
+
 </html>

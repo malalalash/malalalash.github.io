@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+}
+
+header {
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  background-image: linear-gradient(to right, rgb(250, 70, 100), purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button,
+li,
+input {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+header,
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button,
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: none;
+  outline: none;
+  background: none;
+}
+
+.todo-input {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  background: #fff;
+  width: 500px;
+  color: black;
+}
+
+.add-todo {
+  color: rgb(250, 70, 100);
+  font-weight: 700;
+  background-image: linear-gradient(to right, rgb(250, 70, 100), purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.add-todo:hover {
+  opacity: 0.8;
+}
+
+.add-todo:active {
+  opacity: 0.6;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#task {
+  text-align: center;
+  border-radius: 0.5rem;
+  background: transparent;
+  outline: none;
+  border: 1px solid;
+  margin: 1.3rem auto 1rem auto;
+  font-weight: 700;
+  font-size: 0.95rem;
+  width: 200px;
+  background-image: linear-gradient(to right, rgb(250, 70, 100), purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.todo-list {
+  list-style-type: none;
+  width: 800px;
+}
+
+.todo-list .todo-container {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.todo-list li {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.btn {
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
+}
+
+button.done {
+  background: green;
+}
+
+button.delete {
+  background: crimson;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.finished {
+  text-decoration: line-through;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.slide {
+  transform: scale(0.1);
+  transition: all 0.7s ease-out;
+  opacity: 0;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .todo-input {
+    width: 300px;
+  }
+
+  .todo-item {
+    width: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .todo-input {
+    width: 200px;
+  }
+
+  .todo-item {
+    width: 150px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
