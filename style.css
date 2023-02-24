@@ -76,4 +76,14 @@ h2 {
   font-weight: 400;
   margin: 1rem;
   text-transform: uppercase;
+}
+
+.firsth2 {
+  max-width: 80%;
+}
+
+@media (max-width: 470px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
